@@ -1,0 +1,7 @@
+arm-none-eabi-gcc
+-Wall
+-Wextra
+-nostdlib
+--specs=/usr/arm-none-eabi/lib/nano.specs
+-isystem/usr/arm-none-eabi/include
+-iquoteinclude
