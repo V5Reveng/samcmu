@@ -2,23 +2,23 @@
 #include <stdbool.h>
 
 enum v5_ControllerId {
-	ControllerId_Primary = 0,
-	ControllerId_Secondary,
+	v5_ControllerId_Primary = 0,
+	v5_ControllerId_Secondary,
 };
 
 enum v5_ControllerButton {
-	ControllerButton_L1 = 6,
-	ControllerButton_L2,
-	ControllerButton_R1,
-	ControllerButton_R2,
-	ControllerButton_Up,
-	ControllerButton_Down,
-	ControllerButton_Left,
-	ControllerButton_Right,
-	ControllerButton_X,
-	ControllerButton_B,
-	ControllerButton_Y,
-	ControllerButton_A,
+	v5_ControllerButton_L1 = 6,
+	v5_ControllerButton_L2,
+	v5_ControllerButton_R1,
+	v5_ControllerButton_R2,
+	v5_ControllerButton_Up,
+	v5_ControllerButton_Down,
+	v5_ControllerButton_Left,
+	v5_ControllerButton_Right,
+	v5_ControllerButton_X,
+	v5_ControllerButton_B,
+	v5_ControllerButton_Y,
+	v5_ControllerButton_A,
 };
 
 #define V5_SCREEN_HEADER_HEIGHT 32
