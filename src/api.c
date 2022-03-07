@@ -6,8 +6,8 @@
 typedef void (*void_fn_ptr)(void);
 
 struct __attribute__((packed)) ApiTable {
-	void_fn_ptr _unknown0;
-	void_fn_ptr _unknown1;
+	int (*system_version)(void);
+	int (*stdlib_version)(void);
 	void_fn_ptr _unknown2;
 	void_fn_ptr _unknown3;
 	void_fn_ptr _unknown4;
@@ -516,4 +516,12 @@ void v5_display_print_slice(int line, char const* base, unsigned int len) {
 	buf[amount + 2] = 's';
 	buf[amount + 3] = '\0';
 	v5_display_printf(line, buf, base);
+}
+
+int v5_system_version(void) {
+	return __sysapi_func_table_start.system_version();
+}
+
+int v5_stdlib_version(void) {
+	return __sysapi_func_table_start.stdlib_version();
 }
