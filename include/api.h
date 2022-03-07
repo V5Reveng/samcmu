@@ -39,4 +39,4 @@ void v5_display_erase(void);
 
 void v5_display_printf(int line, char const* fmt, ...) __attribute__((format(printf, 2, 3)));
 
-void v5_display_print_rust_str(int line, char const* base, unsigned int size);
+void v5_display_print_slice(int line, char const* base, unsigned int size);

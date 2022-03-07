@@ -509,7 +509,7 @@ void v5_display_printf(int line, char const* fmt, ...) {
 	va_end(args);
 }
 
-void v5_display_print_rust_str(int line, char const* base, unsigned int len) {
+void v5_display_print_slice(int line, char const* base, unsigned int len) {
 	// The V5 printf function does not support %.* (dynamic precision), so we have to generate the format string. Not too difficult.
 	char buf[20] = "%.";
 	int const amount = snprintf(buf + 2, 15, "%u", len);
